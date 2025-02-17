@@ -6,8 +6,19 @@
 //
 
 import UIKit
+import ParseCore
 
 // TODO: Pt 1 - Import Parse Swift
+func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        let parseConfig = ParseClientConfiguration {
+            $0.applicationId = "qlVWxnDmNExWx03iUprYnZOPZaoB1mPw9wfYo6Rx"
+            $0.clientKey = "6rLHT1l6MUGcuMdfGh2VrjsFKrizmALj8Sp1S56h"
+            $0.server = "https://parseapi.back4app.com"
+        }
+        Parse.initialize(with: parseConfig)
+        return true
+}
+
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {

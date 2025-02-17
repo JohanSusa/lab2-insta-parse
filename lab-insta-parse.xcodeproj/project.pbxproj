@@ -9,7 +9,8 @@
 /* Begin PBXBuildFile section */
 		3F11CC6C2D6013E6009E1E79 /* ParseLiveQuery in Frameworks */ = {isa = PBXBuildFile; productRef = 3F11CC6B2D6013E6009E1E79 /* ParseLiveQuery */; };
 		3F11CC6E2D6013E6009E1E79 /* ParseObjC in Frameworks */ = {isa = PBXBuildFile; productRef = 3F11CC6D2D6013E6009E1E79 /* ParseObjC */; };
-		3F11CC712D60161E009E1E79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F11CC702D60161E009E1E79 /* AppDelegate.swift */; };
+		3F6F94022D63F73800B9D755 /* ParseLiveQuery in Frameworks */ = {isa = PBXBuildFile; productRef = 3F6F94012D63F73800B9D755 /* ParseLiveQuery */; };
+		3F6F94042D63F73800B9D755 /* ParseObjC in Frameworks */ = {isa = PBXBuildFile; productRef = 3F6F94032D63F73800B9D755 /* ParseObjC */; };
 		CB13E51F2913A16C008F45BB /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB13E51E2913A16C008F45BB /* PostCell.swift */; };
 		CB13E5212913B10B008F45BB /* DateFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB13E5202913B10B008F45BB /* DateFormatter+Extensions.swift */; };
 		CB69974E2910F705007EDA6B /* Filmotype-Jade.otf in Resources */ = {isa = PBXBuildFile; fileRef = CB69974C2910F704007EDA6B /* Filmotype-Jade.otf */; };
@@ -30,7 +31,6 @@
 
 /* Begin PBXFileReference section */
 		3F11CC6F2D60161E009E1E79 /* lab-insta-parse-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "lab-insta-parse-Bridging-Header.h"; sourceTree = "<group>"; };
-		3F11CC702D60161E009E1E79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB13E51E2913A16C008F45BB /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		CB13E5202913B10B008F45BB /* DateFormatter+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extensions.swift"; sourceTree = "<group>"; };
 		CB69974C2910F704007EDA6B /* Filmotype-Jade.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Filmotype-Jade.otf"; sourceTree = "<group>"; };
@@ -54,8 +54,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F6F94042D63F73800B9D755 /* ParseObjC in Frameworks */,
 				CB7896EC2935A3D500635932 /* ParseSwift in Frameworks */,
 				3F11CC6C2D6013E6009E1E79 /* ParseLiveQuery in Frameworks */,
+				3F6F94022D63F73800B9D755 /* ParseLiveQuery in Frameworks */,
 				3F11CC6E2D6013E6009E1E79 /* ParseObjC in Frameworks */,
 				CB7896F429361CC600635932 /* AlamofireImage in Frameworks */,
 			);
@@ -109,7 +111,6 @@
 		CB73D388290E3B4A00C12538 = {
 			isa = PBXGroup;
 			children = (
-				3F11CC702D60161E009E1E79 /* AppDelegate.swift */,
 				CB73D393290E3B4A00C12538 /* lab-insta-parse */,
 				CB73D392290E3B4A00C12538 /* Products */,
 				3F11CC6F2D60161E009E1E79 /* lab-insta-parse-Bridging-Header.h */,
@@ -173,6 +174,8 @@
 				CB7896F329361CC600635932 /* AlamofireImage */,
 				3F11CC6B2D6013E6009E1E79 /* ParseLiveQuery */,
 				3F11CC6D2D6013E6009E1E79 /* ParseObjC */,
+				3F6F94012D63F73800B9D755 /* ParseLiveQuery */,
+				3F6F94032D63F73800B9D755 /* ParseObjC */,
 			);
 			productName = "lab-insta-parse";
 			productReference = CB73D391290E3B4A00C12538 /* lab-insta-parse.app */;
@@ -186,7 +189,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1400;
-				LastUpgradeCheck = 1400;
+				LastUpgradeCheck = 1520;
 				TargetAttributes = {
 					CB73D390290E3B4A00C12538 = {
 						CreatedOnToolsVersion = 14.0.1;
@@ -236,7 +239,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F11CC712D60161E009E1E79 /* AppDelegate.swift in Sources */,
 				CB13E51F2913A16C008F45BB /* PostCell.swift in Sources */,
 				CBCDFAFE291144DA001F1CF1 /* PostViewController.swift in Sources */,
 				CB73D399290E3B4A00C12538 /* LoginViewController.swift in Sources */,
@@ -308,6 +310,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -368,6 +371,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -508,6 +512,16 @@
 			productName = ParseLiveQuery;
 		};
 		3F11CC6D2D6013E6009E1E79 /* ParseObjC */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3F11CC6A2D6013E6009E1E79 /* XCRemoteSwiftPackageReference "Parse-SDK-iOS-OSX" */;
+			productName = ParseObjC;
+		};
+		3F6F94012D63F73800B9D755 /* ParseLiveQuery */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3F11CC6A2D6013E6009E1E79 /* XCRemoteSwiftPackageReference "Parse-SDK-iOS-OSX" */;
+			productName = ParseLiveQuery;
+		};
+		3F6F94032D63F73800B9D755 /* ParseObjC */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 3F11CC6A2D6013E6009E1E79 /* XCRemoteSwiftPackageReference "Parse-SDK-iOS-OSX" */;
 			productName = ParseObjC;
